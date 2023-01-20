@@ -1,4 +1,4 @@
-# ComponentStructure
+# create React structure
 
 ## What is the project for?
 

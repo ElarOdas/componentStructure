@@ -3,9 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
-	"gopkg.in/yaml.v3"
 	"log"
 	"os"
+
+	"gopkg.in/yaml.v3"
 )
 
 func main() {
@@ -68,7 +69,7 @@ func createJSFile(path string, comp string) {
 	_, jsErr := os.Stat(path)
 	if os.IsNotExist(jsErr) {
 		//Fill the js File
-		template := fmt.Sprintf("import React from 'react'\nimport styles from './%[1]v.module.css'\n\nfunction %[1]v() {\nreturn $0;\n}\nexport default %[1]v;", comp)
+		template := fmt.Sprintf("import React from 'react'\nimport styles from './%[1]v.module.css'\n\nfunction %[1]v() {\nreturn <></>;\n}\nexport default %[1]v;", comp)
 		err := os.WriteFile(path, []byte(template), 0755)
 		if err != nil {
 			log.Fatal(err)

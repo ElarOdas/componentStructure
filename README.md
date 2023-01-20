@@ -5,9 +5,9 @@
 This program was build to improve the creation steps of a **react** app. The program takes the
 structure of the given .yaml file and creates directories, .js Files and .module.css files.
 Additionally the .js files are filled with the base instructions to make them into a component.
-This program was build for my own purpose and it's target audience is me
+This program was build for my own purpose and it's target audience is me.
 
-## How to install this project
+## How to install this project?
 
 A current go installation is required.
 
@@ -24,9 +24,9 @@ go build your/path/
 ./createReactStructure -t /path/to/target -s /path/to/structure
 ```
 
-The program can be run without flags. The default values are -t:./src/components and -s:./componentStructure.yaml
+The program can be run without flags. The default values are -t:./src/components and -s:./componentStructure.yaml.
 
-The provided yaml file should be the dictionary names as keys and the component names as arrays
+The provided yaml file should be the dictionary names as keys and the component names as arrays.
 
 ```yaml Sample structure
 Meal:
